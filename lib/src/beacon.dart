@@ -154,7 +154,7 @@ class Beacon {
   /// - `accuracy > 0 && accuracy <= 0.5` : [Proximity.immediate]
   /// - `accuracy > 0.5 && accuracy < 3.0` : [Proximity.near]
   /// - `accuracy > 3.0` : [Proximity.far]
-  Proximity get proximity {
+  Proximity? get proximity {
     if (_proximity != null) {
       return _proximity;
     }
